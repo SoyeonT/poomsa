@@ -1,0 +1,33 @@
+html,body{height:100%;background:#f8fafc}
+  .fade-in{animation:fade .3s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:.6rem 1rem;border:1px solid #e5e7eb;border-radius:12px;background:#fff;cursor:pointer;transition:.15s box-shadow,.15s transform,.15s background,.15s border-color;box-shadow:0 1px 1px rgba(0,0,0,.03)}
+  .btn:hover{background:#f8fafc}
+  .btn:active{transform:translateY(1px)}
+  .btn.primary{border-color:#4f46e5}
+  .btn.primary:hover{background:#eef2ff}
+  .btn.success{border-color:#059669}
+  .btn.warn{border-color:#f59e0b}
+  .chip{display:inline-flex;align-items:center;justify-content:center;padding:.5rem .9rem;border:1.5px solid #e5e7eb;border-radius:12px;background:#fff;cursor:pointer;transition:.12s;min-width:84px;text-align:center}
+  .chip:hover{background:#f1f5f9}
+  .chip.selected{background:#eef2ff;border-color:#4f46e5;box-shadow:inset 0 0 0 1px #6366f1}
+  .slot{min-width:6rem; cursor:pointer;}
+  .slot.disabled{cursor:default; opacity:.7}
+  u{ text-underline-offset:4px }
+  .muted{color:#6b7280}
+  .panel{background:#ffffff;border:1px solid #e5e7eb;border-radius:14px;padding:12px}
+  .bar{display:flex;gap:8px;flex-wrap:wrap}
+
+  /* 엔딩 */
+  .ending-wrap{position:relative; overflow:hidden; border-radius:16px; border:1px solid #e5e7eb}
+  .ending-img{width:100%; height:auto; display:block; filter:contrast(1) saturate(.9)}
+  .ending-line{
+    position:absolute; left:50%; transform:translateX(-50%);
+    width:92%; max-width:900px;
+    text-align:center; color:#f8fafc; 
+    text-shadow: 0 1px 2px rgba(0,0,0,.55), 0 0 14px rgba(0,0,0,.35);
+    font-family: "Gungsuh","Batang","Nanum Myeongjo","serif";
+    font-weight: 700; letter-spacing:.02em;
+    opacity:0; transition:opacity .6s ease;
+  }
+  .ending-line.show{opacity:1}
